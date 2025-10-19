@@ -2,6 +2,7 @@ const mongoose = require('../db/connect');
 const { Schema, SchemaTypes } = mongoose;
 const { v4: uuidv4 } = require('uuid');
 const bcrypt = require('bcrypt');
+const validator = require('validator');
 
 const UserSchema = new Schema(
     {
